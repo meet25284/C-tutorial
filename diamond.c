@@ -10,7 +10,7 @@ scanf("%d",&row);
 
 for(b=1;b<=row;b++){
     for(space=1;space<=row-b;space++){
-        printf("meet");
+        printf(" ");
     }
     
     for(c=1;c<=2*b-1;c++){
