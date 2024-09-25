@@ -1,19 +1,15 @@
 #include <stdio.h>
-#include <math.h>
-int main()
-{ 
-    
-int row,b,c,space;
-printf("enter the the no. row");
-scanf("%d",&row);
 
-for(b=1;b<=row;b++){
-    
+int main() {
+    int rows, i, j;
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
 
-    for(c=1;c<=2*b-1;c++){
-       printf("*"); 
+    for (i = rows; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
     }
-    printf("\n");
-}
     return 0;
 }
